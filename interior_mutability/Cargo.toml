@@ -1,0 +1,7 @@
+[package]
+name = "interior_mutability"
+version = "0.1.0"
+authors = ["dsolis"]
+edition = "2018"
+
+[dependencies]
