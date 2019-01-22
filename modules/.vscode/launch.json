@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+  
+      // This is just for testing really;
+      // it filters out all tests in the below cli target debug binary.
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "preLaunchTask (no arguments), will err",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}"
+      },
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "mode -b",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}",
+        "arguments": "mode -b"
+      },
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "mode -n",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}",
+        "arguments": "mode -n"
+      },
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "mode -p",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}",
+        "arguments": "mode -p"
+      },
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "mode -h",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}",
+        "arguments": "mode -h"
+      },
+      {
+        "type": "lldb-mi",
+        "request": "launch",
+        "name": "mode -v",
+        "target": "./target/debug/cli",
+        "cwd": "${workspaceRoot}",
+        "arguments": "mode -v"
+      },
+    ]
+  }
